@@ -68,9 +68,10 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "jdk.selected.JAVA_MODULE": "19",
     "last_directory_selection": "C:/Users/elena/Desktop/java/Test_java/sandbox/src/main/java",
-    "last_opened_file_path": "C:/Users/elena/Desktop/java/Test_java/sandbox/build.gradle",
-    "project.structure.last.edited": "Project",
+    "last_opened_file_path": "C:/Users/Elena/Desktop/Test_java/sandbox",
+    "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.2",
     "settings.editor.selected.configurable": "reference.settings.project.maven.repository.indices"
