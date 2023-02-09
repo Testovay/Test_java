@@ -6,7 +6,6 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
-
 import java.util.concurrent.TimeUnit;
 
 public class GroupCreationTests {
@@ -32,7 +31,7 @@ public class GroupCreationTests {
   public void testGroupCreation() {
     getGroupsPage();
     initGroupCreation();
-    fillGroupForm(new GroupData("AddressbookTest", "Test1", "Test2"));
+    fillGroupForm(new GroupData("Test", "Test1", "Test2"));
     submitGroupCreation();
     returnToGroupPage();
   }
