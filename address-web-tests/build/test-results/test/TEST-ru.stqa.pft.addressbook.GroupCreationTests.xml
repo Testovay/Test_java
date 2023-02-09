@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="ru.stqa.pft.addressbook.GroupCreationTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2023-02-09T14:35:25" hostname="DESKTOP-LA0P00D" time="1.368">
+  <properties/>
+  <testcase name="testGroupCreation" classname="ru.stqa.pft.addressbook.GroupCreationTests" time="1.368"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[1675953321514	geckodriver	INFO	Listening on 127.0.0.1:22564
+1675953321811	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "12223" "--remote ... localhost:12223/,http://[::1]:12223/" "-no-remote" "-profile" "C:\\Users\\Elena\\AppData\\Local\\Temp\\rust_mozprofileuN0MrF"
+1675953322249	Marionette	INFO	Marionette enabled
+1675953322259	Marionette	INFO	Listening on port 65003
+WebDriver BiDi listening on ws://localhost:12223
+Read port: 65003
+1675953322571	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\Elena\\AppData\\Local\\Temp\\rust_mozprofileuN0MrF\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:12223/devtools/browser/b7d88c9b-506e-49ef-be47-28d62da549d9
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "http://localhost"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "http://localhost"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "http://localhost"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "http://localhost"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "http://localhost"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "http://localhost"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "http://localhost"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+1675953326681	CDP	ERROR	Invalid browser preferences for CDP. Set "fission.webContentIsolationStrategy"to 0 and "fission.bfcacheInParent" to false before Firefox starts.
+1675953326713	Marionette	INFO	Stopped listening on port 65003
+]]></system-err>
+</testsuite>
