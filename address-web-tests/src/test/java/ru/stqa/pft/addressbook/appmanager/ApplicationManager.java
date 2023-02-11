@@ -13,16 +13,6 @@ public class ApplicationManager {
   private GroupsHelper groupsHelper;
   private SessionHelper sessionHelper;
 
-  public static boolean isAlertPresent(FirefoxDriver wd) {
-    try {
-      wd.switchTo().alert();
-      return true;
-    } catch (NoAlertPresentException e) {
-      return false;
-    }
-
-  }
-
   public void init() {
     wd = new FirefoxDriver();
     wd.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
@@ -45,10 +35,6 @@ public class ApplicationManager {
   public NavigationHelper getNavigationHelper() {
     return navigationHelper;
   }
-  public SessionHelper getSessionHelper() {
-    return sessionHelper;
-  }
-
   public ContactHelper getContactHelper() {
     return contactHelper;
   }
