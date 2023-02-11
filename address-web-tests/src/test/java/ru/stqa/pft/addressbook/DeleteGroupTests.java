@@ -4,10 +4,10 @@ import org.testng.annotations.Test;
 public class DeleteGroupTests extends TestBase {
   @Test
   public void testDeleteGroup() {
-    goGroupsPage();
-    selectGroup();
-    deleteSelectedGroup();
-    returnToGroupPage();
+    app.goGroupsPage();
+    app.selectGroup();
+    app.deleteSelectedGroup();
+    app.returnToGroupPage();
   }
 
 }
