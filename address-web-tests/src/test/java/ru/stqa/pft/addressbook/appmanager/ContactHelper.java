@@ -26,6 +26,8 @@ public class ContactHelper extends HelperBase{
     click(By.cssSelector("input:nth-child(87)"));
   }
 
+  public void returnHomePage() {click(By.linkText("home page"));}
+
   public void fillAddNewContact(ContactDate contactDate) {
     type(By.name("firstname"), contactDate.getFirstname());
     type(By.name("middlename"), contactDate.getMiddlename());
@@ -37,5 +39,11 @@ public class ContactHelper extends HelperBase{
 
   public void initAddNew() {
     click(By.linkText("add new"));
+  }
+
+  public void initContactModification() {click(By.cssSelector("tr:nth-child(2) > .center:nth-child(8) img"));
+  }
+
+  public void clickUpdate() {click(By.cssSelector("input:nth-child(86)"));
   }
 }
