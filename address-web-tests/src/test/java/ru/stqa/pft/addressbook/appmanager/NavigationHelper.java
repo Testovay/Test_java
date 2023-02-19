@@ -8,5 +8,19 @@ public class NavigationHelper extends HelperBase{
     super(wd);
   }
 
-  public void goGroupsPage() { click(By.linkText("groups")); }
+  public void goGroupsPage() {
+    if (isElementPresent(By.tagName("h1"))
+          && wd.findElement(By.tagName("h1")).getText().equals("Groups")
+          && isElementPresent(By.name("new"))) {
+      return;
+    }
+    click(By.linkText("groups"));
+  }
+
+  public void goHomePage() {
+    if (isElementPresent(By.id("maintable"))) {
+      return;
+    }
+    click(By.linkText("home"));
+  }
 }

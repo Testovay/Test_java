@@ -2,6 +2,8 @@ package ru.stqa.pft.addressbook.appmanager;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.support.ui.Select;
+import org.testng.Assert;
 import ru.stqa.pft.addressbook.model.ContactDate;
 
 public class ContactHelper extends HelperBase{
@@ -28,13 +30,19 @@ public class ContactHelper extends HelperBase{
 
   public void returnHomePage() {click(By.linkText("home page"));}
 
-  public void fillAddNewContact(ContactDate contactDate) {
+  public void fillAddNewContact(ContactDate contactDate, boolean creation) {
     type(By.name("firstname"), contactDate.getFirstname());
     type(By.name("middlename"), contactDate.getMiddlename());
     type(By.name("lastname"), contactDate.getLastname());
     type(By.name("mobile"), contactDate.getMobile());
     type(By.name("email"), contactDate.getEmail());
-    type(By.name("address2"), contactDate.getAddress2());
+    type(By.name("address"), contactDate.getAddress());
+
+    if (creation) {
+      new Select(wd.findElement(By.name("new_group"))).selectByVisibleText(contactDate.getGroup());
+    } else {
+      Assert.assertFalse(isElementPresent(By.name("new_group")));
+    }
   }
 
   public void initAddNew() {
@@ -45,5 +53,15 @@ public class ContactHelper extends HelperBase{
   }
 
   public void clickUpdate() {click(By.cssSelector("input:nth-child(86)"));
+  }
+
+  public void createContact(ContactDate contact, boolean create) {
+    initAddNew();
+    fillAddNewContact(contact, create);
+    clickEnter();
+    returnHomePage();
+  }
+
+  public boolean isThereAContact() { return isElementPresent(By.name("selected[]"));
   }
 }
