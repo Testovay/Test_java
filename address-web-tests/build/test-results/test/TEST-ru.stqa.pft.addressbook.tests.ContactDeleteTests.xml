@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="ru.stqa.pft.addressbook.tests.ContactDeleteTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2023-02-27T15:14:33" hostname="DESKTOP-LA0P00D" time="0.119">
+<testsuite name="ru.stqa.pft.addressbook.tests.ContactDeleteTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2023-03-01T14:23:43" hostname="DESKTOP-LA0P00D" time="0.351">
   <properties/>
-  <testcase name="testContactDelete" classname="ru.stqa.pft.addressbook.tests.ContactDeleteTests" time="0.119"/>
+  <testcase name="testContactDelete" classname="ru.stqa.pft.addressbook.tests.ContactDeleteTests" time="0.351"/>
   <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[Starting ChromeDriver 110.0.5481.77 (65ed616c6e8ee3fe0ad64fe83796c020644d42af-refs/branch-heads/5481@{#839}) on port 41631
+  <system-err><![CDATA[Starting ChromeDriver 110.0.5481.77 (65ed616c6e8ee3fe0ad64fe83796c020644d42af-refs/branch-heads/5481@{#839}) on port 35352
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-[1677510872.097][WARNING]: virtual void DevToolsClientImpl::AddListener(DevToolsEventListener *) subscribing a listener to the already connected DevToolsClient. Connection notification will not arrive.
-февр. 27, 2023 6:14:32 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+[1677680622.606][WARNING]: virtual void DevToolsClientImpl::AddListener(DevToolsEventListener *) subscribing a listener to the already connected DevToolsClient. Connection notification will not arrive.
+мар. 01, 2023 5:23:42 PM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: W3C
 ]]></system-err>
 </testsuite>
