@@ -20,8 +20,8 @@ public class ContactHelper extends HelperBase{
     click(By.cssSelector(".left:nth-child(8) > input"));
   }
 
-  public void selectedContact() {
-    click(By.name("selected[]"));
+  public void selectedContact(int index) {
+    wd.findElements(By.name("selected[]")).get(index).click();;
   }
 
   public void clickEnter() {
@@ -49,7 +49,7 @@ public class ContactHelper extends HelperBase{
     click(By.linkText("add new"));
   }
 
-  public void initContactModification() {click(By.cssSelector("tr:nth-child(2) > .center:nth-child(8) img"));
+  public void initContactModification(int index) {wd.findElements(By.xpath("//img[@alt='Edit']")).get(index).click();
   }
 
   public void clickUpdate() {click(By.cssSelector("input:nth-child(86)"));
