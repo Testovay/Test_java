@@ -3,7 +3,7 @@ package ru.stqa.pft.addressbook.model;
 import java.util.Objects;
 
 public class ContactDate {
-  private final String id;
+  private int id;
   private final String firstname;
   private final String middlename;
   private final String lastname;
@@ -12,7 +12,7 @@ public class ContactDate {
   private final String address;
   private final String group;
   public ContactDate (String firstname, String middlename, String lastname, String mobile, String email, String address, String group) {
-    this.id = null;
+    this.id = 0;
     this.firstname = firstname;
     this.middlename = middlename;
     this.lastname = lastname;
@@ -21,7 +21,7 @@ public class ContactDate {
     this.address = address;
     this.group = group;
   }
-  public ContactDate (String id, String firstname, String middlename, String lastname, String mobile, String email, String address, String group) {
+  public ContactDate (int id, String firstname, String middlename, String lastname, String mobile, String email, String address, String group) {
     this.id = id;
     this.firstname = firstname;
     this.middlename = middlename;
@@ -31,8 +31,10 @@ public class ContactDate {
     this.address = address;
     this.group = group;
   }
-
-  public String getId() {return id;}
+  public void setId(int id) {
+    this.id = id;
+  }
+  public int getId() {return id;}
   public String getFirstname() {return firstname;}
   public String getMiddlename() {return middlename;}
   public String getLastname() {return lastname;}
@@ -57,7 +59,7 @@ public class ContactDate {
 
     ContactDate that = (ContactDate) o;
 
-    if (!Objects.equals(id, that.id)) return false;
+    if (id != that.id) return false;
     if (!Objects.equals(firstname, that.firstname)) return false;
     if (!Objects.equals(lastname, that.lastname)) return false;
     return Objects.equals(address, that.address);
@@ -65,13 +67,12 @@ public class ContactDate {
 
   @Override
   public int hashCode() {
-    int result = id != null ? id.hashCode() : 0;
+    int result = id;
     result = 31 * result + (firstname != null ? firstname.hashCode() : 0);
     result = 31 * result + (lastname != null ? lastname.hashCode() : 0);
     result = 31 * result + (address != null ? address.hashCode() : 0);
     return result;
   }
-
 }
 
 
