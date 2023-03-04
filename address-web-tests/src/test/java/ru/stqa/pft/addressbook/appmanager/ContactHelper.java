@@ -81,9 +81,9 @@ public class ContactHelper extends HelperBase{
       String lastname = data.get(1).getText();
       String firstname = data.get(2).getText();
       String address = data.get(3).getText();
-      String email = data.get(4).getText();
-      String mobile = data.get(5).getText();
-      ContactDate contact = new ContactDate(firstname, null, lastname,mobile, email, address, null);
+      //String email = data.get(4).getText();
+      //String mobile = data.get(5).getText();
+      ContactDate contact = new ContactDate(firstname, null, lastname,null, null, address, null);
       contacts.add(contact);
     }
     return contacts;
