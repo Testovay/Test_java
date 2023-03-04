@@ -25,7 +25,7 @@ public class ContactHelper extends HelperBase{
   }
 
   public void selectedContact(int index) {
-    wd.findElements(By.name("selected[]")).get(index).click();;
+    wd.findElements(By.name("selected[]")).get(index).click();
   }
 
   public void clickEnter() {
@@ -77,13 +77,14 @@ public class ContactHelper extends HelperBase{
     List<ContactDate> contacts = new ArrayList<ContactDate>();
     List<WebElement> elements = wd.findElements(By.cssSelector("tr[name=entry]"));
     for (WebElement element : elements) {
+      String id = element.findElement(By.tagName("input")).getAttribute("value");
       List<WebElement> data = element.findElements(By.tagName("td"));
       String lastname = data.get(1).getText();
       String firstname = data.get(2).getText();
       String address = data.get(3).getText();
       //String email = data.get(4).getText();
       //String mobile = data.get(5).getText();
-      ContactDate contact = new ContactDate(firstname, null, lastname,null, null, address, null);
+      ContactDate contact = new ContactDate(id, firstname, null, lastname,null, null, address, null);
       contacts.add(contact);
     }
     return contacts;

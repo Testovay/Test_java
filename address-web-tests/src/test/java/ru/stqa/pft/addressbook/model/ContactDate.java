@@ -3,6 +3,7 @@ package ru.stqa.pft.addressbook.model;
 import java.util.Objects;
 
 public class ContactDate {
+  private final String id;
   private final String firstname;
   private final String middlename;
   private final String lastname;
@@ -10,8 +11,18 @@ public class ContactDate {
   private final String email;
   private final String address;
   private final String group;
-
   public ContactDate (String firstname, String middlename, String lastname, String mobile, String email, String address, String group) {
+    this.id = null;
+    this.firstname = firstname;
+    this.middlename = middlename;
+    this.lastname = lastname;
+    this.mobile = mobile;
+    this.email = email;
+    this.address = address;
+    this.group = group;
+  }
+  public ContactDate (String id, String firstname, String middlename, String lastname, String mobile, String email, String address, String group) {
+    this.id = id;
     this.firstname = firstname;
     this.middlename = middlename;
     this.lastname = lastname;
@@ -21,6 +32,7 @@ public class ContactDate {
     this.group = group;
   }
 
+  public String getId() {return id;}
   public String getFirstname() {return firstname;}
   public String getMiddlename() {return middlename;}
   public String getLastname() {return lastname;}
@@ -32,12 +44,12 @@ public class ContactDate {
   @Override
   public String toString() {
     return "ContactDate{" +
-            "firstname='" + firstname + '\'' +
+            "id='" + id + '\'' +
+            ", firstname='" + firstname + '\'' +
             ", lastname='" + lastname + '\'' +
             ", address='" + address + '\'' +
             '}';
   }
-
   @Override
   public boolean equals(Object o) {
     if (this == o) return true;
@@ -45,6 +57,7 @@ public class ContactDate {
 
     ContactDate that = (ContactDate) o;
 
+    if (!Objects.equals(id, that.id)) return false;
     if (!Objects.equals(firstname, that.firstname)) return false;
     if (!Objects.equals(lastname, that.lastname)) return false;
     return Objects.equals(address, that.address);
@@ -52,11 +65,13 @@ public class ContactDate {
 
   @Override
   public int hashCode() {
-    int result = firstname != null ? firstname.hashCode() : 0;
+    int result = id != null ? id.hashCode() : 0;
+    result = 31 * result + (firstname != null ? firstname.hashCode() : 0);
     result = 31 * result + (lastname != null ? lastname.hashCode() : 0);
     result = 31 * result + (address != null ? address.hashCode() : 0);
     return result;
   }
+
 }
 
 

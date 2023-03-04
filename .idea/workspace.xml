@@ -92,7 +92,7 @@
       <recent name="ru.stqa.pft.sandox" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.GroupDeleteTests">
+  <component name="RunManager" selected="Gradle.ContactModificationTests">
     <configuration name="ContactCreationTests" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -116,7 +116,7 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="ContactDeleteTests" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="ContactCreationTests.testContactCreation" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$/address-web-tests" />
@@ -129,7 +129,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;ru.stqa.pft.addressbook.tests.ContactDeleteTests&quot;" />
+            <option value="&quot;ru.stqa.pft.addressbook.tests.ContactCreationTests.testContactCreation&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -185,7 +185,7 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="GroupDeleteTests" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="GroupModificationTests" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$/address-web-tests" />
@@ -198,7 +198,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;ru.stqa.pft.addressbook.tests.GroupDeleteTests&quot;" />
+            <option value="&quot;ru.stqa.pft.addressbook.tests.GroupModificationTests&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -210,11 +210,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.GroupDeleteTests" />
         <item itemvalue="Gradle.ContactModificationTests" />
         <item itemvalue="Gradle.ContactCreationTests" />
-        <item itemvalue="Gradle.ContactDeleteTests" />
         <item itemvalue="Gradle.GroupCreationTests" />
+        <item itemvalue="Gradle.GroupModificationTests" />
+        <item itemvalue="Gradle.ContactCreationTests.testContactCreation" />
       </list>
     </recent_temporary>
   </component>
