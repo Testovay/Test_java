@@ -12,7 +12,7 @@ public class ContactDate {
   private final String address;
   private final String group;
   public ContactDate (String firstname, String middlename, String lastname, String mobile, String email, String address, String group) {
-    this.id = 0;
+    this.id = Integer.MAX_VALUE;
     this.firstname = firstname;
     this.middlename = middlename;
     this.lastname = lastname;
@@ -52,6 +52,7 @@ public class ContactDate {
             ", address='" + address + '\'' +
             '}';
   }
+
   @Override
   public boolean equals(Object o) {
     if (this == o) return true;
@@ -59,7 +60,6 @@ public class ContactDate {
 
     ContactDate that = (ContactDate) o;
 
-    if (id != that.id) return false;
     if (!Objects.equals(firstname, that.firstname)) return false;
     if (!Objects.equals(lastname, that.lastname)) return false;
     return Objects.equals(address, that.address);
@@ -67,8 +67,7 @@ public class ContactDate {
 
   @Override
   public int hashCode() {
-    int result = id;
-    result = 31 * result + (firstname != null ? firstname.hashCode() : 0);
+    int result = firstname != null ? firstname.hashCode() : 0;
     result = 31 * result + (lastname != null ? lastname.hashCode() : 0);
     result = 31 * result + (address != null ? address.hashCode() : 0);
     return result;
