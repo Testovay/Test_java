@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="ru.stqa.pft.addressbook.tests.GroupDeleteTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2023-03-06T15:56:47" hostname="DESKTOP-LA0P00D" time="0.301">
+<testsuite name="ru.stqa.pft.addressbook.tests.GroupDeleteTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2023-03-06T16:40:44" hostname="DESKTOP-LA0P00D" time="0.301">
   <properties/>
   <testcase name="testGroupDelete" classname="ru.stqa.pft.addressbook.tests.GroupDeleteTests" time="0.301"/>
   <system-out><![CDATA[]]></system-out>
