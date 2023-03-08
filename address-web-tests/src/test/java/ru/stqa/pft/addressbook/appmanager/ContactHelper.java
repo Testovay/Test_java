@@ -94,8 +94,7 @@ public class ContactHelper extends HelperBase{
       String address = data.get(3).getText();
       //String email = data.get(4).getText();
       //String mobile = data.get(5).getText();
-      ContactDate contact = new ContactDate(id, firstname, null, lastname,null, null, address, null);
-      contacts.add(contact);
+      contacts.add(new ContactDate().withId(id).withFirstname(firstname).withLastname(lastname).withAddress(address));
     }
     return contacts;
   }

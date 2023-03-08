@@ -3,37 +3,55 @@ package ru.stqa.pft.addressbook.model;
 import java.util.Objects;
 
 public class ContactDate {
-  private int id;
-  private final String firstname;
-  private final String middlename;
-  private final String lastname;
-  private final String mobile;
-  private final String email;
-  private final String address;
-  private final String group;
-  public ContactDate (String firstname, String middlename, String lastname, String mobile, String email, String address, String group) {
-    this.id = Integer.MAX_VALUE;
-    this.firstname = firstname;
-    this.middlename = middlename;
-    this.lastname = lastname;
-    this.mobile = mobile;
-    this.email = email;
-    this.address = address;
-    this.group = group;
-  }
-  public ContactDate (int id, String firstname, String middlename, String lastname, String mobile, String email, String address, String group) {
+  private int id = Integer.MAX_VALUE;
+  private String firstname;
+  private String middlename;
+  private String lastname;
+  private String mobile;
+  private String email;
+  private String address;
+  private String group;
+
+  public ContactDate withId(int id) {
     this.id = id;
+    return this;
+  }
+
+  public ContactDate withFirstname(String firstname) {
     this.firstname = firstname;
+    return this;
+  }
+
+  public ContactDate withMiddlename(String middlename) {
     this.middlename = middlename;
+    return this;
+  }
+
+  public ContactDate withLastname(String lastname) {
     this.lastname = lastname;
+    return this;
+  }
+
+  public ContactDate withMobile(String mobile) {
     this.mobile = mobile;
+    return this;
+  }
+
+  public ContactDate withEmail(String email) {
     this.email = email;
+    return this;
+  }
+
+  public ContactDate withAddress(String address) {
     this.address = address;
+    return this;
+  }
+
+  public ContactDate withGroup(String group) {
     this.group = group;
+    return this;
   }
-  public void setId(int id) {
-    this.id = id;
-  }
+
   public int getId() {return id;}
   public String getFirstname() {return firstname;}
   public String getMiddlename() {return middlename;}

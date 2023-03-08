@@ -15,14 +15,15 @@ public class ContactCreationTests extends TestBase {
   public void ensurePrecondition() {
     app.goTo().groupPage();
     if (app.group().list().size() == 0) {
-      app.group().create(new GroupData("Test", "Test11","Test111"));
+      app.group().create(new GroupData().withName("Test"));
     }
   }
   @Test
   public void testContactCreation() {
     app.goTo().homePage();
     List<ContactDate> before = app.contact().list();
-    ContactDate contact = new ContactDate("Test1", "Testovich", "Testovii", "89277465676", "test@test.com", "Moscow", "Test");
+    ContactDate contact = new ContactDate()
+            .withFirstname("Test1").withMiddlename("Testovich").withLastname("Testovii").withMobile("89277465676").withEmail("test@test.com").withAddress("Moscow").withGroup("Test");
     app.contact().create(contact, true);
     List<ContactDate> after = app.contact().list();
     Assert.assertEquals(after.size(), before.size() + 1);
