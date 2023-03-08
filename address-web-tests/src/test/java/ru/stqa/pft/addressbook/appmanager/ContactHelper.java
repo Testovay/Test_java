@@ -8,7 +8,9 @@ import org.testng.Assert;
 import ru.stqa.pft.addressbook.model.ContactDate;
 
 import java.util.ArrayList;
+import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
 
 public class ContactHelper extends HelperBase{
 
@@ -27,7 +29,9 @@ public class ContactHelper extends HelperBase{
   public void selectedContact(int index) {
     wd.findElements(By.name("selected[]")).get(index).click();
   }
-
+  public void selectedContactById(int id) {
+    wd.findElement(By.cssSelector("input[value='" + id + "']")).click();
+  }
   public void clickEnter() {
     click(By.cssSelector("input:nth-child(87)"));
   }
@@ -53,8 +57,9 @@ public class ContactHelper extends HelperBase{
     click(By.linkText("add new"));
   }
 
-  public void initContactModification(int index) {wd.findElements(By.xpath("//img[@alt='Edit']")).get(index).click();
-  }
+  public void initContactModification(int index) {wd.findElements(By.cssSelector("img[alt=Edit]")).get(index).click(); }
+
+  public void initContactModificationById(int id) {wd.findElement(By.cssSelector("a[href='edit.php?id=" + id + "']")).click(); }
 
   public void clickUpdate() {click(By.cssSelector("input:nth-child(86)"));
   }
@@ -71,8 +76,20 @@ public class ContactHelper extends HelperBase{
     clickUpdate();
     returnHomePage();
   }
+
+  public void modify(ContactDate contact) {
+    initContactModificationById(contact.getId());
+    fillAddNewContact(contact, false);
+    clickUpdate();
+    returnHomePage();
+  }
   public void delete(int index) {
     selectedContact(index);
+    deleteSelectedContact();
+    confirmDeleteContact();
+  }
+  public void delete(ContactDate contact) {
+    selectedContactById(contact.getId());
     deleteSelectedContact();
     confirmDeleteContact();
   }
@@ -85,6 +102,21 @@ public class ContactHelper extends HelperBase{
 
   public List<ContactDate> list() {
     List<ContactDate> contacts = new ArrayList<ContactDate>();
+    List<WebElement> elements = wd.findElements(By.cssSelector("tr[name=entry]"));
+    for (WebElement element : elements) {
+      int id = Integer.parseInt(element.findElement(By.tagName("input")).getAttribute("value"));
+      List<WebElement> data = element.findElements(By.tagName("td"));
+      String lastname = data.get(1).getText();
+      String firstname = data.get(2).getText();
+      String address = data.get(3).getText();
+      //String email = data.get(4).getText();
+      //String mobile = data.get(5).getText();
+      contacts.add(new ContactDate().withId(id).withFirstname(firstname).withLastname(lastname).withAddress(address));
+    }
+    return contacts;
+  }
+  public Set<ContactDate> all() {
+    Set<ContactDate> contacts = new HashSet<ContactDate>();
     List<WebElement> elements = wd.findElements(By.cssSelector("tr[name=entry]"));
     for (WebElement element : elements) {
       int id = Integer.parseInt(element.findElement(By.tagName("input")).getAttribute("value"));

@@ -78,6 +78,7 @@ public class ContactDate {
 
     ContactDate that = (ContactDate) o;
 
+    if (id != that.id) return false;
     if (!Objects.equals(firstname, that.firstname)) return false;
     if (!Objects.equals(lastname, that.lastname)) return false;
     return Objects.equals(address, that.address);
@@ -85,7 +86,8 @@ public class ContactDate {
 
   @Override
   public int hashCode() {
-    int result = firstname != null ? firstname.hashCode() : 0;
+    int result = id;
+    result = 31 * result + (firstname != null ? firstname.hashCode() : 0);
     result = 31 * result + (lastname != null ? lastname.hashCode() : 0);
     result = 31 * result + (address != null ? address.hashCode() : 0);
     return result;
