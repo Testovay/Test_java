@@ -1,5 +1,6 @@
 package ru.stqa.pft.addressbook.model;
 
+import java.io.File;
 import java.util.Objects;
 
 public class ContactDate {
@@ -18,6 +19,7 @@ public class ContactDate {
   private String address;
   private String address2;
   private String group;
+  public File photo;
 
   public ContactDate withId(int id) {
     this.id = id;
@@ -87,6 +89,11 @@ public class ContactDate {
     return this;
   }
 
+  public ContactDate withPhoto(File photo) {
+    this.photo = photo;
+    return this;
+  }
+
   public int getId() {return id;}
   public String getFirstname() {return firstname;}
   public String getMiddlename() {return middlename;}
@@ -102,6 +109,8 @@ public class ContactDate {
   public String getAddress() {return address;}
   public String getAddress2() {return address2;}
   public String getGroup() {return group;}
+  public File getPhoto() {return photo;}
+
 
   @Override
   public String toString() {

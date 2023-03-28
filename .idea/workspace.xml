@@ -92,7 +92,7 @@
       <recent name="ru.stqa.pft.sandox" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.ContactDataTests">
+  <component name="RunManager" selected="Gradle.ContactCreationTests">
     <configuration name="ContactCreationTests" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -210,8 +210,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.ContactDataTests" />
         <item itemvalue="Gradle.ContactCreationTests" />
+        <item itemvalue="Gradle.ContactDataTests" />
         <item itemvalue="Gradle.GroupCreationTests" />
         <item itemvalue="Gradle.Tests in 'ru.stqa.pft.addressbook.tests'" />
         <item itemvalue="Gradle.ContactDeleteTests" />
