@@ -46,7 +46,7 @@ public class ContactDataGenerator {
     List<ContactDate> contacts = new ArrayList<ContactDate>();
     for (int i = 0; i < count; i++) {
       contacts.add(new ContactDate().withFirstname(String.format("Test %s", i)).withMiddlename(String.format("Testovich %s",i)).withLastname(String.format("Testovii %s", i))
-              .withMobile(String.format("89277465676 %s", i)).withEmail(String.format("test@test.com %s", i)).withAddress(String.format("Moscow %s", i)).withGroup(String.format("Test %s",i)));
+              .withMobile(String.format("89277465676 %s", i)).withEmail(String.format("test@test.com %s", i)).withAddress(String.format("Moscow %s", i)).withGroup(String.format("test 1",i)));
     }
     return contacts;
   }

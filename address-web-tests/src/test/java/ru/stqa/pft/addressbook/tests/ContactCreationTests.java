@@ -7,7 +7,7 @@ import ru.stqa.pft.addressbook.model.ContactDate;
 import ru.stqa.pft.addressbook.model.Contacts;
 import ru.stqa.pft.addressbook.model.GroupData;
 
-import java.io.File;
+import java.io.*;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
@@ -25,13 +25,17 @@ public class ContactCreationTests extends TestBase {
     }
   }
   @DataProvider
-  public Iterator<Object[]> validContacts() {
+  public Iterator<Object[]> validContacts() throws IOException {
     File photo = new File("src/test/resources/stru.png");
     List<Object[]> list = new ArrayList<Object[]>();
-    list.add(new Object[] {new ContactDate().withFirstname("Test1").withMiddlename("Testovich1").withLastname("Testovii1").withMobile("89277465676").withEmail("test@test1.com").withAddress("Moscow1").withGroup("test1").withPhoto(photo)});
-    list.add(new Object[] {new ContactDate().withFirstname("Test2").withMiddlename("Testovich2").withLastname("Testovii2").withMobile("89277465676").withEmail("test@test2.com").withAddress("Moscow2").withGroup("test1").withPhoto(photo)});
-    list.add(new Object[] {new ContactDate().withFirstname("Test3").withMiddlename("Testovich3").withLastname("Testovii3").withMobile("89277465676").withEmail("test@test3.com").withAddress("Moscow3").withGroup("test1").withPhoto(photo)});
-    return list.iterator();
+    BufferedReader reader = new BufferedReader(new FileReader(new File("src/test/resources/contacts.csv")));
+    String line = reader.readLine();
+    while (line != null) {
+      String[] split = line.split(";");
+      list.add(new Object[]{new ContactDate().withFirstname(split[0]).withMiddlename(split[1]).withLastname(split[2]).withMobile(split[3]).withEmail(split[4]).withAddress(split[5]).withGroup(split[6]).withPhoto(photo)});
+      line = reader.readLine();
+    }
+   return list.iterator();
   }
   @Test(dataProvider = "validContacts")
   public void testContactCreation(ContactDate contact) {
