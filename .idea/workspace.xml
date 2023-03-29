@@ -34,10 +34,6 @@
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
                 <item name="address-web-tests" type="f1a62948:ProjectNode" />
               </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="sandbox" type="f1a62948:ProjectNode" />
-              </path>
             </expand>
             <select />
           </tree_state>
@@ -96,7 +92,7 @@
     <configuration name="ContactDataGenerator" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ru.stqa.pft.addressbook.generators.ContactDataGenerator" />
       <module name="address-web-tests.test" />
-      <option name="PROGRAM_PARAMETERS" value="10 src/test/resources/contacts.csv" />
+      <option name="PROGRAM_PARAMETERS" value="-c 15 -f src/test/resources/contacts.csv" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/address-web-tests" />
       <extension name="coverage">
         <pattern>
@@ -111,7 +107,7 @@
     <configuration name="GroupDataGenerator" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ru.stqa.pft.addressbook.generators.GroupDataGenerator" />
       <module name="address-web-tests.test" />
-      <option name="PROGRAM_PARAMETERS" value="10 src/test/resources/groups.csv" />
+      <option name="PROGRAM_PARAMETERS" value="-c 15 -f src/test/resources/groups.csv" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/address-web-tests" />
       <extension name="coverage">
         <pattern>
