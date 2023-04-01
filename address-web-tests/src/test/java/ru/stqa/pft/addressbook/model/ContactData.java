@@ -1,95 +1,106 @@
 package ru.stqa.pft.addressbook.model;
 
+import com.google.gson.annotations.Expose;
+import com.thoughtworks.xstream.annotations.XStreamOmitField;
+
 import java.io.File;
 import java.util.Objects;
 
-public class ContactDate {
+public class ContactData {
+  @XStreamOmitField
   private int id = Integer.MAX_VALUE;
+  @Expose
   private String firstname;
+  @Expose
   private String middlename;
+  @Expose
   private String lastname;
   private String homephone;
+  @Expose
   private String mobile;
   private String workphone;
   private String allphones;
+  @Expose
   private String email;
   private String email2;
   private String email3;
   private String allemails;
+  @Expose
   private String address;
   private String address2;
+  @Expose
   private String group;
   public File photo;
 
-  public ContactDate withId(int id) {
+  public ContactData withId(int id) {
     this.id = id;
     return this;
   }
 
-  public ContactDate withFirstname(String firstname) {
+  public ContactData withFirstname(String firstname) {
     this.firstname = firstname;
     return this;
   }
 
-  public ContactDate withMiddlename(String middlename) {
+  public ContactData withMiddlename(String middlename) {
     this.middlename = middlename;
     return this;
   }
 
-  public ContactDate withLastname(String lastname) {
+  public ContactData withLastname(String lastname) {
     this.lastname = lastname;
     return this;
   }
-  public ContactDate withHomephone(String homephone) {
+  public ContactData withHomephone(String homephone) {
     this.homephone = homephone;
     return this;
   }
-  public ContactDate withMobile(String mobile) {
+  public ContactData withMobile(String mobile) {
     this.mobile = mobile;
     return this;
   }
-  public ContactDate withWorkphone(String workphone) {
+  public ContactData withWorkphone(String workphone) {
     this.workphone = workphone;
     return this;
   }
 
-  public ContactDate withAllphones(String allphones) {
+  public ContactData withAllphones(String allphones) {
     this.allphones = allphones;
     return this;
   }
 
-  public ContactDate withEmail(String email) {
+  public ContactData withEmail(String email) {
     this.email = email;
     return this;
   }
-  public ContactDate withEmail2(String email2) {
+  public ContactData withEmail2(String email2) {
     this.email2 = email2;
     return this;
   }
-  public ContactDate withEmail3(String email3) {
+  public ContactData withEmail3(String email3) {
     this.email3 = email3;
     return this;
   }
 
-  public ContactDate withAllemails(String allemails) {
+  public ContactData withAllemails(String allemails) {
     this.allemails = allemails;
     return this;
   }
-  public ContactDate withAddress(String address) {
+  public ContactData withAddress(String address) {
     this.address = address;
     return this;
   }
-  public ContactDate withAddress2(String address2) {
+  public ContactData withAddress2(String address2) {
     this.address2 = address2;
     return this;
   }
 
-  public ContactDate withGroup(String group) {
+  public ContactData withGroup(String group) {
     this.group = group;
     return this;
   }
 
-  public ContactDate withPhoto(File photo) {
+  public ContactData withPhoto(File photo) {
     this.photo = photo;
     return this;
   }
@@ -126,7 +137,7 @@ public class ContactDate {
     if (this == o) return true;
     if (o == null || getClass() != o.getClass()) return false;
 
-    ContactDate that = (ContactDate) o;
+    ContactData that = (ContactData) o;
 
     if (id != that.id) return false;
     if (!Objects.equals(firstname, that.firstname)) return false;
