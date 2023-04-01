@@ -1,5 +1,5 @@
 <list>
-  <ru.stqa.pft.addressbook.model.ContactDate>
+  <contact>
     <firstname>Test 0</firstname>
     <middlename>Testovich 0</middlename>
     <lastname>Testovii 0</lastname>
@@ -7,8 +7,8 @@
     <email>test@test.com 0</email>
     <address>Moscow 0</address>
     <group>[none]</group>
-  </ru.stqa.pft.addressbook.model.ContactDate>
-  <ru.stqa.pft.addressbook.model.ContactDate>
+  </contact>
+  <contact>
     <firstname>Test 1</firstname>
     <middlename>Testovich 1</middlename>
     <lastname>Testovii 1</lastname>
@@ -16,8 +16,8 @@
     <email>test@test.com 1</email>
     <address>Moscow 1</address>
     <group>[none]</group>
-  </ru.stqa.pft.addressbook.model.ContactDate>
-  <ru.stqa.pft.addressbook.model.ContactDate>
+  </contact>
+  <contact>
     <firstname>Test 2</firstname>
     <middlename>Testovich 2</middlename>
     <lastname>Testovii 2</lastname>
@@ -25,5 +25,5 @@
     <email>test@test.com 2</email>
     <address>Moscow 2</address>
     <group>[none]</group>
-  </ru.stqa.pft.addressbook.model.ContactDate>
+  </contact>
 </list>
