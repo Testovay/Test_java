@@ -120,6 +120,7 @@ public class ContactData {
   public String getAllemails() {return allemails;}
   public String getAddress() {return address;}
   public String getAddress2() {return address2;}
+
   public String getGroup() {return group;}
   public File getPhoto() {return photo;}
 

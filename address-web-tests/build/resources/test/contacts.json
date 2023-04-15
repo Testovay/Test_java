@@ -5,7 +5,8 @@
     "lastname": "Testovii 0",
     "mobile": "89277465676 0",
     "email": "test@test.com 0",
-    "address": "Moscow 0"
+    "address": "Moscow 0",
+    "group": "[none]"
   },
   {
     "firstname": "Test 1",
@@ -13,7 +14,8 @@
     "lastname": "Testovii 1",
     "mobile": "89277465676 1",
     "email": "test@test.com 1",
-    "address": "Moscow 1"
+    "address": "Moscow 1",
+    "group": "[none]"
   },
   {
     "firstname": "Test 2",
@@ -21,6 +23,7 @@
     "lastname": "Testovii 2",
     "mobile": "89277465676 2",
     "email": "test@test.com 2",
-    "address": "Moscow 2"
+    "address": "Moscow 2",
+    "group": "[none]"
   }
 ]
