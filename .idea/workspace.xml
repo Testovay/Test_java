@@ -88,8 +88,31 @@
       <recent name="ru.stqa.pft.sandox" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.GroupModificationTests">
-    <configuration name="ContactDataTests" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+  <component name="RunManager" selected="Gradle.ContactDeleteTests">
+    <configuration name="ContactCreationTests" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/address-web-tests" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":testContacts" />
+            <option value="--tests" />
+            <option value="&quot;ru.stqa.pft.addressbook.tests.ContactCreationTests&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="ContactDeleteTests" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$/address-web-tests" />
@@ -102,7 +125,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;ru.stqa.pft.addressbook.tests.ContactDataTests&quot;" />
+            <option value="&quot;ru.stqa.pft.addressbook.tests.ContactDeleteTests&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -135,29 +158,6 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="GroupModificationTests" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$/address-web-tests" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;ru.stqa.pft.addressbook.tests.GroupModificationTests&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <method v="2" />
-    </configuration>
     <configuration name="Tests in 'ru.stqa.pft.addressbook.tests'" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -181,9 +181,9 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="C:/Users/Elena/Desktop/Test_java/address-web-tests/src/test/resources/testng.xml" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="C:/Users/Elena/Desktop/Test_java/address-web-tests/src/test/resources/testng-contacts.xml" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="address-web-tests.test" />
-      <option name="SUITE_NAME" value="$PROJECT_DIR$/address-web-tests/src/test/resources/testng.xml" />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/address-web-tests/src/test/resources/testng-contacts.xml" />
       <option name="TEST_OBJECT" value="SUITE" />
       <properties />
       <listeners />
@@ -192,19 +192,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Gradle.ContactDataTests" />
-      <item itemvalue="Gradle.GroupModificationTests" />
-      <item itemvalue="Gradle.Tests in 'ru.stqa.pft.addressbook.tests'" />
+      <item itemvalue="Gradle.ContactDeleteTests" />
       <item itemvalue="Gradle.GroupCreationTests" />
-      <item itemvalue="TestNG.C:/Users/Elena/Desktop/Test_java/address-web-tests/src/test/resources/testng.xml" />
+      <item itemvalue="Gradle.Tests in 'ru.stqa.pft.addressbook.tests'" />
+      <item itemvalue="Gradle.ContactCreationTests" />
+      <item itemvalue="TestNG.C:/Users/Elena/Desktop/Test_java/address-web-tests/src/test/resources/testng-contacts.xml" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.GroupModificationTests" />
-        <item itemvalue="Gradle.GroupCreationTests" />
-        <item itemvalue="Gradle.ContactDataTests" />
+        <item itemvalue="Gradle.ContactDeleteTests" />
+        <item itemvalue="TestNG.C:/Users/Elena/Desktop/Test_java/address-web-tests/src/test/resources/testng-contacts.xml" />
         <item itemvalue="Gradle.Tests in 'ru.stqa.pft.addressbook.tests'" />
-        <item itemvalue="TestNG.C:/Users/Elena/Desktop/Test_java/address-web-tests/src/test/resources/testng.xml" />
+        <item itemvalue="Gradle.ContactCreationTests" />
+        <item itemvalue="Gradle.GroupCreationTests" />
       </list>
     </recent_temporary>
   </component>

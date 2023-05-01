@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="ru.stqa.pft.addressbook.tests.GroupCreationTests" tests="1" skipped="0" failures="1" errors="0" timestamp="2023-05-01T08:39:13" hostname="DESKTOP-LA0P00D" time="0.846">
+  <properties/>
+  <testcase name="tearDown" classname="ru.stqa.pft.addressbook.tests.GroupCreationTests" time="0.846">
+    <failure message="org.openqa.selenium.remote.UnreachableBrowserException: Error communicating with the remote browser. It may have died.&#10;Build info: version: '3.5.2', revision: '10229a9', time: '2017-08-21T17:29:55.15Z'&#10;System info: host: 'DESKTOP-LA0P00D', ip: '192.168.0.107', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.2'&#10;Driver info: driver.version: RemoteWebDriver&#10;Capabilities [{moz:profile=C:\Users\Elena\AppData\Local\Temp\rust_mozprofilefWEqzM, moz:geckodriverVersion=0.32.2, timeouts={implicit=0, pageLoad=300000, script=30000}, pageLoadStrategy=normal, unhandledPromptBehavior=dismiss and notify, strictFileInteractability=false, moz:headless=false, moz:windowless=false, platform=ANY, proxy=Proxy(), moz:accessibilityChecks=false, moz:useNonSpecCompliantPointerOrigin=false, acceptInsecureCerts=false, browserVersion=102.10.0, moz:shutdownTimeout=60000, platformVersion=10.0, moz:processID=9508, browserName=firefox, moz:buildID=20230403141754, javascriptEnabled=true, platformName=windows, setWindowRect=true, moz:webdriverClick=true}]&#10;Session ID: 5ca931cc-ef9a-4cea-a97f-64ac1e5b3f0b" type="org.openqa.selenium.remote.UnreachableBrowserException">org.openqa.selenium.remote.UnreachableBrowserException: Error communicating with the remote browser. It may have died.
+Build info: version: '3.5.2', revision: '10229a9', time: '2017-08-21T17:29:55.15Z'
+System info: host: 'DESKTOP-LA0P00D', ip: '192.168.0.107', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.2'
+Driver info: driver.version: RemoteWebDriver
+Capabilities [{moz:profile=C:\Users\Elena\AppData\Local\Temp\rust_mozprofilefWEqzM, moz:geckodriverVersion=0.32.2, timeouts={implicit=0, pageLoad=300000, script=30000}, pageLoadStrategy=normal, unhandledPromptBehavior=dismiss and notify, strictFileInteractability=false, moz:headless=false, moz:windowless=false, platform=ANY, proxy=Proxy(), moz:accessibilityChecks=false, moz:useNonSpecCompliantPointerOrigin=false, acceptInsecureCerts=false, browserVersion=102.10.0, moz:shutdownTimeout=60000, platformVersion=10.0, moz:processID=9508, browserName=firefox, moz:buildID=20230403141754, javascriptEnabled=true, platformName=windows, setWindowRect=true, moz:webdriverClick=true}]
+Session ID: 5ca931cc-ef9a-4cea-a97f-64ac1e5b3f0b
+	at app//org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:662)
+	at app//org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:698)
+	at app//org.openqa.selenium.remote.RemoteWebDriver.quit(RemoteWebDriver.java:537)
+	at app//ru.stqa.pft.addressbook.appmanager.ApplicationManager.stop(ApplicationManager.java:39)
+	at app//ru.stqa.pft.addressbook.tests.TestBase.tearDown(TestBase.java:20)
+	at java.base@19.0.2/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base@19.0.2/java.lang.reflect.Method.invoke(Method.java:578)
+	at app//org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at app//org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+	at app//org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)
+	at app//org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
+	at app//org.testng.SuiteRunner.privateRun(SuiteRunner.java:404)
+	at app//org.testng.SuiteRunner.run(SuiteRunner.java:330)
+	at app//org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at app//org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at app//org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+	at app//org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+	at app//org.testng.TestNG.runSuites(TestNG.java:1099)
+	at app//org.testng.TestNG.run(TestNG.java:1067)
+	at org.gradle.api.internal.tasks.testing.testng.TestNGTestClassProcessor.runTests(TestNGTestClassProcessor.java:146)
+	at org.gradle.api.internal.tasks.testing.testng.TestNGTestClassProcessor.stop(TestNGTestClassProcessor.java:91)
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.stop(SuiteTestClassProcessor.java:62)
+	at java.base@19.0.2/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base@19.0.2/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:94)
+	at jdk.proxy1/jdk.proxy1.$Proxy2.stop(Unknown Source)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker$3.run(TestWorker.java:193)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.executeAndMaintainThreadName(TestWorker.java:129)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:100)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:60)
+	at org.gradle.process.internal.worker.child.ActionExecutionWorker.execute(ActionExecutionWorker.java:56)
+	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:113)
+	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:65)
+	at app//worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69)
+	at app//worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
+Caused by: java.lang.RuntimeException: Process refused to die after 10 seconds, and couldn't taskkill it: Couldn't detect pid
+	at org.openqa.selenium.os.ProcessUtils.killWinProcess(ProcessUtils.java:133)
+	at org.openqa.selenium.os.ProcessUtils.killProcess(ProcessUtils.java:81)
+	at org.openqa.selenium.os.UnixProcess$SeleniumWatchDog.destroyHarder(UnixProcess.java:265)
+	at org.openqa.selenium.os.UnixProcess$SeleniumWatchDog.access$200(UnixProcess.java:219)
+	at org.openqa.selenium.os.UnixProcess.destroy(UnixProcess.java:127)
+	at org.openqa.selenium.os.CommandLine.destroy(CommandLine.java:153)
+	at org.openqa.selenium.remote.service.DriverService.stop(DriverService.java:220)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:94)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:641)
+	... 37 more
+Caused by: java.lang.RuntimeException: Couldn't detect pid
+	at org.openqa.selenium.os.ProcessUtils.getProcessId(ProcessUtils.java:195)
+	at org.openqa.selenium.os.ProcessUtils.killWinProcess(ProcessUtils.java:128)
+	... 45 more
+Caused by: java.lang.reflect.InaccessibleObjectException: Unable to make field private final long java.lang.ProcessImpl.handle accessible: module java.base does not &quot;opens java.lang&quot; to unnamed module @609db43b
+	at java.base/java.lang.reflect.AccessibleObject.throwInaccessibleObjectException(AccessibleObject.java:387)
+	at java.base/java.lang.reflect.AccessibleObject.checkCanSetAccessible(AccessibleObject.java:363)
+	at java.base/java.lang.reflect.AccessibleObject.checkCanSetAccessible(AccessibleObject.java:311)
+	at java.base/java.lang.reflect.Field.checkCanSetAccessible(Field.java:180)
+	at java.base/java.lang.reflect.Field.setAccessible(Field.java:174)
+	at org.openqa.selenium.os.ProcessUtils.getProcessId(ProcessUtils.java:181)
+	... 46 more
+</failure>
+  </testcase>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
