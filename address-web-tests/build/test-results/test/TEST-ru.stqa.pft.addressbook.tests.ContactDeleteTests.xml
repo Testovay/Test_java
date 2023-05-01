@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="ru.stqa.pft.addressbook.tests.ContactDeleteTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2023-05-01T09:04:34" hostname="DESKTOP-LA0P00D" time="3.226">
+<testsuite name="ru.stqa.pft.addressbook.tests.ContactDeleteTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2023-05-01T11:12:28" hostname="DESKTOP-LA0P00D" time="0.849">
   <properties/>
-  <testcase name="testContactDelete" classname="ru.stqa.pft.addressbook.tests.ContactDeleteTests" time="3.226"/>
-  <system-out><![CDATA[]]></system-out>
+  <testcase name="testContactDelete" classname="ru.stqa.pft.addressbook.tests.ContactDeleteTests" time="0.849"/>
+  <system-out><![CDATA[14:12:28.183 [Test worker] INFO  r.s.pft.addressbook.tests.TestBase -- Start test testContactDelete with parameters []
+14:12:29.047 [Test worker] INFO  r.s.pft.addressbook.tests.TestBase -- Stop test testContactDelete
+]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

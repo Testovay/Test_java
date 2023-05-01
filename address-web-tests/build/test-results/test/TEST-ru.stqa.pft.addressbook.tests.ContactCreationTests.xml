@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="ru.stqa.pft.addressbook.tests.ContactCreationTests" tests="4" skipped="0" failures="0" errors="0" timestamp="2023-05-01T11:12:20" hostname="DESKTOP-LA0P00D" time="7.766">
+  <properties/>
+  <testcase name="testBadContactCreation" classname="ru.stqa.pft.addressbook.tests.ContactCreationTests" time="2.081"/>
+  <testcase name="testContactCreation[0](ContactDate{id=2147483647, firstname='Test 0', lastname='Testovii 0'})" classname="ru.stqa.pft.addressbook.tests.ContactCreationTests" time="1.836"/>
+  <testcase name="testContactCreation[1](ContactDate{id=2147483647, firstname='Test 1', lastname='Testovii 1'})" classname="ru.stqa.pft.addressbook.tests.ContactCreationTests" time="1.873"/>
+  <testcase name="testContactCreation[2](ContactDate{id=2147483647, firstname='Test 2', lastname='Testovii 2'})" classname="ru.stqa.pft.addressbook.tests.ContactCreationTests" time="1.953"/>
+  <system-out><![CDATA[14:12:20.139 [Test worker] INFO  r.s.pft.addressbook.tests.TestBase -- Start test testBadContactCreation with parameters []
+14:12:22.226 [Test worker] INFO  r.s.pft.addressbook.tests.TestBase -- Stop test testBadContactCreation
+14:12:22.235 [Test worker] INFO  r.s.pft.addressbook.tests.TestBase -- Start test testContactCreation with parameters [ContactDate{id=2147483647, firstname='Test 0', lastname='Testovii 0'}]
+14:12:24.073 [Test worker] INFO  r.s.pft.addressbook.tests.TestBase -- Stop test testContactCreation
+14:12:24.076 [Test worker] INFO  r.s.pft.addressbook.tests.TestBase -- Start test testContactCreation with parameters [ContactDate{id=2147483647, firstname='Test 1', lastname='Testovii 1'}]
+14:12:25.953 [Test worker] INFO  r.s.pft.addressbook.tests.TestBase -- Stop test testContactCreation
+14:12:25.955 [Test worker] INFO  r.s.pft.addressbook.tests.TestBase -- Start test testContactCreation with parameters [ContactDate{id=2147483647, firstname='Test 2', lastname='Testovii 2'}]
+14:12:27.909 [Test worker] INFO  r.s.pft.addressbook.tests.TestBase -- Stop test testContactCreation
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

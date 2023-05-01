@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="ru.stqa.pft.addressbook.tests.GroupDeleteTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2023-05-01T11:12:37" hostname="DESKTOP-LA0P00D" time="1.057">
+  <properties/>
+  <testcase name="testGroupDelete" classname="ru.stqa.pft.addressbook.tests.GroupDeleteTests" time="1.057"/>
+  <system-out><![CDATA[14:12:37.569 [Test worker] INFO  r.s.pft.addressbook.tests.TestBase -- Start test testGroupDelete with parameters []
+14:12:38.739 [Test worker] INFO  r.s.pft.addressbook.tests.TestBase -- Stop test testGroupDelete
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
